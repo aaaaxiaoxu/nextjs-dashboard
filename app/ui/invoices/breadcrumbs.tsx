@@ -19,7 +19,7 @@ export default function Breadcrumbs({
         {breadcrumbs.map((breadcrumb, index) => (
           <li
             key={breadcrumb.href}
-            aria-current={breadcrumb.active}
+            aria-current={breadcrumb.active ? 'true' : 'false'}
             className={clsx(
               breadcrumb.active ? 'text-gray-900' : 'text-gray-500',
             )}
